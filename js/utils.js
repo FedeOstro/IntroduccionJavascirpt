@@ -30,3 +30,13 @@ function multiplicarnums(numeros){
   })
   return numerosx2
 }
+
+function empiezacona(nombres){
+  let nombrescona = []  
+  nombres.forEach(n => {
+    if (n.startsWith("A")) { 
+      nombrescona.push(n); 
+    }
+  })
+  return nombrescona;
+}

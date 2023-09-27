@@ -60,3 +60,41 @@ function ej6(){
     console.log(string1)
   }
 }
+
+function ej7(){
+  const nombreñ = prompt("Ingrese una lista de nombres separados por coma")
+  let nombres = nombreñ.split(',')
+  let nombresconA = empiezacona(nombres)
+  console.log(nombresconA)
+  const mensaje = document.getElementById('mensaje7')
+  mensaje.innerHTML = nombresconA 
+}
+
+function ej8(){
+  const cadena = prompt("Ingrese una oracion")
+  const palabraRemplasar = prompt("Ingrese una palabra de la oracion anterior que quieras remplazar")
+  const palabraRemplazo = prompt("Ingrese una palabra para usar de remplazo")
+  const cadena2 = cadena.replace(palabraRemplasar, palabraRemplazo)
+  const mensaje = document.getElementById('mensaje8')
+  mensaje.innerHTML = cadena2
+}
+
+function ej9(){
+  const cadena = prompt("Ingrese una oracion")
+  const numero = prompt("Ingrese un numero para cortar la oracion anterior")
+  const cadena2 = cadena.slice(numero)
+  const mensaje = document.getElementById('mensaje9')
+  mensaje.innerHTML = cadena2
+}
+
+function ej10(){
+  const cadena = prompt("Ingese una lista de cosas separadas por coma")
+  const cadena2 = cadena.replaceAll(',', '-')
+  const mensaje = document.getElementById('mensaje10')
+  mensaje.innerHTML = cadena2
+}
+
+function ej11(){
+  const valores = prompt("Ingrese una lista de objetos con sus respectivos valores en el formato nombre:total y separados por coma")
+  
+}
