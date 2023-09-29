@@ -40,3 +40,14 @@ function empiezacona(nombres){
   })
   return nombrescona;
 }
+
+function calcularRecaudacion(valores) {
+  var pedidos = valores.split(', ');
+  var totalRecaudado = 0;
+  for (var i = 0; i < pedidos.length; i++) {
+    var pedido = pedidos[i].split(':');
+    var total = parseFloat(pedido[1]);
+    totalRecaudado += total;
+  }
+  return totalRecaudado
+}

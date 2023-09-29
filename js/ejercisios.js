@@ -95,6 +95,8 @@ function ej10(){
 }
 
 function ej11(){
-  const valores = prompt("Ingrese una lista de objetos con sus respectivos valores en el formato nombre:total y separados por coma")
-  
+  const valores = prompt("Ingrese una lista de objetos con sus respectivos valores: Total y separados por coma")
+  total = calcularRecaudacion(valores);
+  const mensaje = document.getElementById('mensaje11');
+  mensaje.innerHTML = total
 }
